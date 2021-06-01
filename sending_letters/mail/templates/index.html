@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>test</title>
+
+</head>
+
+<body>
+ 
+    <main>
+        {% comment %} <a href="{% url 'sendemail' %}" role="button">Подписаться </a> {% endcomment %}
+        <form method="post" action="{% url 'sendemail' %}" >
+        {% csrf_token %}
+        {% for field in form %}
+        {{ field }}
+        {% endfor %}
+        <button type="submit" 
+                                        
+                                       
+                                        
+                                        Сохранить
+                                                                                 
+                                    </button>
+
+    </main>
+    
+</body>
+
+</html>
+
+
+    
+                                                                
+                                                        
